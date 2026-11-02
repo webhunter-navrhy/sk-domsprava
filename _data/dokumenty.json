@@ -1,0 +1,26 @@
+[
+ {
+  "nazev": "Dotazník na aktualizáciu osobných údajov",
+  "popis": "Pri nahlasovaní zmien osobných údajov v našom informačnom systéme."
+ },
+ {
+  "nazev": "Zmena vlastníkov v evidencii",
+  "popis": "Formulár na zhromaždenie informácií potrebných na zmenu vlastníkov."
+ },
+ {
+  "nazev": "Spôsoby rozúčtovania nákladových položiek",
+  "popis": "Prehľad, ako sa náklady rozúčtovávajú."
+ },
+ {
+  "nazev": "Žiadosť o opravu",
+  "popis": "Oprava alebo odstránenie závady v spoločných častiach alebo zariadeniach v dome."
+ },
+ {
+  "nazev": "Žiadosť",
+  "popis": "Pre podania, na ktoré nie je samostatný formulár."
+ },
+ {
+  "nazev": "Prístup k on-line BUILDINGcare",
+  "popis": "Žiadosť o prístup do on-line systému."
+ }
+]

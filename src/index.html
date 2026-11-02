@@ -1,0 +1,80 @@
+{% extends "_base.html" %}
+{% set titulek = 'Domspráva s.r.o. – správa nehnuteľností, Nové Mesto n. V.' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="stitok">Facility management · Nové Mesto nad Váhom</p>
+      <h1>Správa bytových a nebytových priestorov</h1>
+      <p class="uvod">Komplexné služby okolo prevádzky a údržby nehnuteľností na celom území okresu Nové Mesto nad Váhom. Držiteľ certifikátu ISO pre technickú správu nehnuteľností a upratovacie služby.</p>
+      <div class="akcie">
+        <a class="tlacitko" href="#domy">Domy v správe</a>
+        <a class="tlacitko druhe" href="#kontakt">Napíšte nám</a>
+      </div>
+    </div>
+    <aside class="tabula">
+      <span class="okno-ikona" aria-hidden="true"></span>
+      <p class="tabula-nadpis">Pohotovostný dispečing</p>
+      <p class="tabula-cislo"><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+      <p class="tabula-pop">Závadu v spoločných častiach domu alebo v zariadeniach nahlásite kedykoľvek, 24 hodín denne.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <h2>S čím Vám pomáhame</h2>
+    <ul role="list" class="sluzby">
+      {% for s in data.sluzby %}<li><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ul>
+    <ul role="list" class="vyhody">
+      <li>profesionálne kvalifikovaní zamestnanci</li>
+      <li>dlhoročná skúsenosť v odbore</li>
+      <li>vysoká kvalita služieb</li>
+      <li>osvedčení zmluvní partneri</li>
+      <li>flexibilita pracovných síl</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce domy" id="domy">
+  <div class="wrap">
+    <h2>Domy v správe</h2>
+    <p class="podnadpis">Bytové domy a spoločenstvá, o ktoré sa staráme.</p>
+    <div class="ulice">
+      {% for u in data.domy %}<section><h3>{{ u.ulica }}</h3><ul role="list">{% for d in u.domy %}<li>{{ d }}</li>{% endfor %}</ul></section>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="tlaciva">
+  <div class="wrap">
+    <h2>Tlačivá a formuláre</h2>
+    <p class="podnadpis">Formuláre a dokumenty pre vlastníkov a nájomníkov.</p>
+    <ul role="list" class="dokumenty">
+      {% for d in data.dokumenty %}<li><h3>{{ d.nazev }}</h3><p>{{ d.popis }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap kontakt-grid">
+    <div>
+      <h2>Kontakt</h2>
+      <address>
+        <strong>{{ site.nazev }}</strong><br>
+        {{ site.kontakt.adresa.ulice }}<br>
+        {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}<br>
+        IČO: {{ site.ico }}
+      </address>
+      <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br>
+      Dispečing: <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+    </div>
+    <div>
+      <p class="podnadpis">V prípade otázok alebo dohodnutia stretnutia nám prosím napíšte.</p>
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+{% endblock %}

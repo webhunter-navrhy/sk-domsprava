@@ -1,0 +1,15 @@
+{
+  "znamka": 6,
+  "slabiny": [
+    "Hero na PC i mobilu (buňka 1) a celý web: stále tu není žádná fotka. Podle QA je největší obrázek na stránce logo o velikosti 6 kB. Modré obdélníčky zmizely, ale nahradila je bílá karta s oranžovým čtverečkem, takže hero pořád nemá silný obraz. Na PC navíc pod tlačítky zůstává asi 150 px prázdného místa. Oprava: od klienta vyžádat fotku spravovaného domu v Novém Meste nad Váhom (v briefu je mezi chybějícími podklady) a dát ji v hero přes celou šířku. Kartu dispečinku nechat jako menší překryv u spodní hrany fotky a oranžové okno použít jen jako malou značku.",
+    "Hlavička na mobilu (390 px, všechny buňky): logo už je zmenšené a ostré, ale pod ním pořád zůstává řádek čtyř drobných odkazů (Služby, Domy v správe, Tlačivá, Kontakt) s písmem asi 12 px. Jsou to dotykové cíle menší než 40 px a hlavička zabírá asi 72 px. Hamburger ani ikona telefonu dispečinku vpravo nahoře nepřibyly. Oprava: odkazy dát do hamburgeru vpravo a vedle něj přidat ikonu tel: na číslo +421 905 730 592 s cílem aspoň 44 × 44 px.",
+    "Sekce Tlačivá a formuláre (PC buňka 3, mobil buňka 5): šest karet s oranžovým levým okrajem zůstalo jako mřížka stejných rámečků. Návštěvník nemá žádný způsob, jak tlačivo získat: karty nikam nevedou a nemají štítek „na vyžiadanie“. Oprava: převést je na typografický seznam s jemnými linkami ve stejném vzoru jako sekce Domy v správe. Ke každé položce doplnit štítek „na vyžiadanie“ a odkaz mailto:info@domsprava.sk s předmětem podle názvu tlačiva, dokud klient nedodá aktuální soubory."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Sekce Domy v správe je opravená: místo 14 očíslovaných boxů je tu přehledný typografický seznam seskupený podle ulic a spoločenstiev, s jemnými oranžovými linkami. Na PC i na mobilu se dobře čte.",
+    "Logo se už na mobilu neroztahuje (QA ho nehlásí) a CTA v hero se vejdou na první obrazovku. Obsah vychází jen z briefu: ISO je bez nepotvrzeného čísla, domy, IČO i adresa odpovídají a telefon dispečinku je klikací v hero i v kontaktu."
+  ],
+  "verdikt": "Dvě ze tří výtek jsou opravené jen zčásti. Domy a logo jsou v pořádku, ale web pořád nemá jedinou fotku a mobilní menu bez hamburgeru zůstává drobné. Bez skutečné fotky domu od klienta zůstane web šablonovitý a známka se nad 6–7 nedostane.",
+  "_hash": "4a1a691e13be12a9de797d100dcec8be5ef56dd4"
+}

@@ -1,0 +1,36 @@
+[
+ {
+  "ulica": "Športová",
+  "domy": [
+   "SVB 62 b. j. Športová 1925",
+   "BD Športová 2643",
+   "BD Športová 2715"
+  ]
+ },
+ {
+  "ulica": "Častkovce",
+  "domy": [
+   "BD Častkovce 574",
+   "BD Častkovce 591",
+   "BD Častkovce 592"
+  ]
+ },
+ {
+  "ulica": "SNP, M. R. Štefánika, Lieskovská",
+  "domy": [
+   "SVB Obytný dom 18/388 SNP",
+   "BD SNP 379",
+   "BD M. R. Štefánika 817",
+   "BD Lieskovská 2528"
+  ]
+ },
+ {
+  "ulica": "Spoločenstvá vlastníkov bytov",
+  "domy": [
+   "SVB Beckov 204",
+   "SVB Dúha",
+   "SVB Hájovky",
+   "SVB Lúky"
+  ]
+ }
+]

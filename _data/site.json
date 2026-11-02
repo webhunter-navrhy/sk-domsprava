@@ -1,0 +1,51 @@
+{
+  "slug": "sk-domsprava",
+  "nazev": "Domspráva s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-domsprava/",
+  "base": "/sk-domsprava/",
+  "lang": "sk",
+  "popis": "Domspráva s.r.o. – facility management, správa bytových a nebytových priestorov a upratovacie služby v okrese Nové Mesto nad Váhom.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "og.jpg",
+  "logo": "logo.png",
+  "theme_color": "#ffffff",
+  "typ": "LocalBusiness",
+  "ico": "36721468",
+  "kontakt": {
+    "email": "info@domsprava.sk",
+    "telefon": "+421 905 730 592",
+    "adresa": {
+      "ulice": "ul. M. R. Štefánika 26",
+      "psc": "915 01",
+      "mesto": "Nové Mesto nad Váhom",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Správa z webu"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Domy v správe",
+      "href": "#domy"
+    },
+    {
+      "text": "Tlačivá",
+      "href": "#tlaciva"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}
