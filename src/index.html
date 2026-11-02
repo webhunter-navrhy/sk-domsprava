@@ -53,7 +53,7 @@
     <h2>Tlačivá a formuláre</h2>
     <p class="podnadpis">Formuláre a dokumenty pre vlastníkov a nájomníkov.</p>
     <ul role="list" class="dokumenty">
-      {% for d in data.dokumenty %}<li><h3>{{ d.nazev }}</h3><p>{{ d.popis }}</p></li>{% endfor %}
+      {% for d in data.dokumenty %}<li><div><h3>{{ d.nazev }}</h3><p>{{ d.popis }}</p></div><a class="vyziadanie" href="mailto:{{ site.kontakt.email }}?subject={{ d.nazev|urlencode }}">Na vyžiadanie e-mailom</a></li>{% endfor %}
     </ul>
   </div>
 </section>

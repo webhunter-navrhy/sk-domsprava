@@ -1,9 +1,8 @@
 {
-  "url": "http://localhost:8799/sk-domsprava/",
+  "url": "https://webhunter-navrhy.github.io/sk-domsprava/",
   "ok": true,
   "chyby": [],
   "varovani": [
-    "Web má noindex (u ostrého webu pravděpodobně chyba)",
     "Dotykové cíle <40 px na mobilu: 3× (např. a.skip \"Preskočiť na obsah\" 143×28; a.logo \"\" 192×30; a \"+421 905 730 592\" 227×33)"
   ],
   "metriky": {
@@ -33,16 +32,16 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 0.05,
+    "preneseno_PC_MB": 0.04,
     "nejvetsi_obrazek_PC": {
       "kB": 6,
-      "url": "http://localhost:8799/sk-domsprava/logo.png"
+      "url": "https://webhunter-navrhy.github.io/sk-domsprava/logo.png"
     },
     "snimku_PC": 4,
-    "preneseno_mobil_MB": 0.05,
+    "preneseno_mobil_MB": 0.04,
     "nejvetsi_obrazek_mobil": {
       "kB": 6,
-      "url": "http://localhost:8799/sk-domsprava/logo.png"
+      "url": "https://webhunter-navrhy.github.io/sk-domsprava/logo.png"
     },
     "snimku_mobil": 6,
     "seo": {

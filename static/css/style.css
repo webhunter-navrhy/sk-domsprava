@@ -60,10 +60,15 @@ h3 { font-size: 1.2rem; margin-bottom: .4rem; }
 .ulice h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; color: var(--orange-d); border-bottom: 3px solid var(--orange); padding-bottom: .4rem; margin-bottom: .2rem; }
 .ulice li { padding: .6rem 0; border-bottom: 1px solid var(--line); font-weight: 600; }
 
-.dokumenty { display: grid; gap: 1rem; }
+.dokumenty { display: grid; gap: 0 3rem; }
 @media (min-width: 48rem) { .dokumenty { grid-template-columns: 1fr 1fr; } }
-.dokumenty li { border: 1px solid var(--line); border-left: 6px solid var(--orange); padding: 1rem 1.2rem; background: #fff; }
+.dokumenty li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.dokumenty li:first-child, .dokumenty li:nth-child(2) { border-top: 3px solid var(--orange); }
+@media (max-width: 47.99rem) { .dokumenty li:nth-child(2) { border-top: 0; } }
 .dokumenty p { margin: 0; color: var(--muted); font-size: .95rem; }
+.vyziadanie { flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 .9rem; border: 2px solid var(--text); border-radius: 4px; font-weight: 700; font-size: .85rem; text-decoration: none; white-space: nowrap; }
+.vyziadanie:hover { background: var(--text); color: #fff; }
+@media (max-width: 40rem) { .dokumenty li { flex-direction: column; align-items: flex-start; } }
 
 .kontakt { background: var(--blue); }
 .kontakt-grid { display: grid; gap: 3rem; }
@@ -77,5 +82,16 @@ address { font-style: normal; margin-bottom: 1rem; font-size: 1.1rem; }
 .paticka { background: var(--text); color: #fff; padding-block: 2rem; }
 .paticka p { margin: 0 0 .3rem; }
 .paticka a { display: inline-flex; align-items: center; min-height: 44px; }
-@media (max-width: 40rem) { .hlavicka .wrap { flex-direction: column; align-items: flex-start; gap: .2rem; padding-block: .5rem; } .hlavicka nav { gap: 0 1rem; font-size: .88rem; } .tlacitko { width: 100%; justify-content: center; } }
+.hl-akcie { display: flex; align-items: center; gap: .4rem; order: 3; }
+.hl-tel, .menu-tlacitko { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; background: transparent; border: 0; border-radius: 4px; cursor: pointer; }
+.hl-tel { background: var(--orange); color: #1c1c1c; }
+.menu-tlacitko { flex-direction: column; gap: 5px; border: 2px solid var(--text); }
+.menu-tlacitko span { display: block; width: 20px; height: 2px; background: var(--text); }
+@media (max-width: 40rem) {
+  .hlavicka .wrap { min-height: 4rem; position: relative; }
+  .hl-tel, .menu-tlacitko { display: inline-flex; }
+  .hlavicka nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: #fff; border-bottom: 3px solid var(--orange); flex-direction: column; padding: .5rem 1.25rem 1rem; font-size: 1.05rem; }
+  .hlavicka nav.otvorene { display: flex; }
+  .tlacitko { width: 100%; justify-content: center; }
+}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }

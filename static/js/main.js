@@ -19,3 +19,12 @@
     });
   });
 })();
+
+(function () {
+  var b = document.querySelector('.menu-tlacitko'), n = document.getElementById('hl-menu');
+  if (!b || !n) return;
+  function zavri() { n.classList.remove('otvorene'); b.setAttribute('aria-expanded', 'false'); }
+  b.addEventListener('click', function () { var o = n.classList.toggle('otvorene'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+  n.addEventListener('click', function (e) { if (e.target.tagName === 'A') zavri(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') zavri(); });
+})();
